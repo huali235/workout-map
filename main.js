@@ -12,6 +12,9 @@ if (navigator.geolocation)
         maxZoom: 20,
         subdomains: ["mt0", "mt1", "mt2", "mt3"],
       }).addTo(map);
+      map.on("click", function (e) {
+        let marker = L.marker(e.latlng).addTo(map);
+      });
     },
     function () {
       alert("Could not access your location");
