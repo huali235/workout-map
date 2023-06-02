@@ -22,6 +22,40 @@
   <body>
     <div class="sidebar">
       <h1>Workout APP 💪</h1>
+      <ul class="workouts">
+        <form class="form hidden">
+          <div class="form-row">
+            <label class="form-label">Type</label>
+            <select class="form-input form-input-type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label">Distance</label>
+            <input class="form-input form-input--distance" placeholder="km" />
+          </div>
+          <div class="form-row">
+            <label class="form-label">Duration</label>
+            <input class="form-input form-input--duration" placeholder="min" />
+          </div>
+          <div class="form-row">
+            <label class="form-label">Cadence</label>
+            <input
+              class="form-input form-input--cadence"
+              placeholder="step/min"
+            />
+          </div>
+          <div class="form-row form-row--hidden">
+            <label class="form-label">Elev Gain</label>
+            <input
+              class="form-input form-input--elevation"
+              placeholder="meters"
+            />
+          </div>
+          <button class="form-btn">OK</button>
+        </form>
+      </ul>
     </div>
     <div id="map"></div>
   </body>
